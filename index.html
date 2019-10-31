@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <script>
+        // Web page summarizer
+        // https://rapidapi.com/Top-Rated/api/webpage-summarizer/endpoints
+
+        // Start Ajax call
+
+        // Key 11ec7730d8mshf0f1ca431afe37ep1b5b52jsn073911782e1c
+
+        // Request URL: https://webpage-summarizer.p.rapidapi.com/
+
+
+        // URL https://edition.cnn.com/2019/08/08/politics/trump-director-of-national-intelligence-search/index.html
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            // Need to figure out parameters needed to change the ?url into a variable
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fedition.cnn.com%2F2019%2F08%2F08%2Fpolitics%2Ftrump-director-of-national-intelligence-search%2Findex.html",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
+                "x-rapidapi-key": "11ec7730d8mshf0f1ca431afe37ep1b5b52jsn073911782e1c"
+            }
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        });
+
+    </script>
+</body>
+
+</html>
