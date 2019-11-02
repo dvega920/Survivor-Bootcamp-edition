@@ -1,0 +1,242 @@
+.top-bar {
+    background-color: #2c3840;
+    border-bottom: solid 5px #0a0a0a;
+}
+
+.top-bar .ul {
+  background-color: #2c3840;
+}
+
+.top-bar .top-bar-left .menu-text {
+    background-color: #2c3840;
+    color: white;
+}
+
+.top-bar .top-bar-right .menu {
+    background-color: #2c3840;
+    color: white;
+}
+
+a { 
+    color: white;
+}
+
+
+.hero-section {
+    background: url("http://getwallpapers.com/wallpaper/full/9/b/b/632371.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 40vh;
+    border-bottom: #0a0a0a solid 20px;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.hero-section .hero-section-text {
+    color: lightgoldenrodyellow;
+    text-shadow: 6px 6px 12px #0a0a0a;
+}
+
+.infoContainer {
+    border: solid 2px #2c3840;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    padding-bottom: 25px;
+  
+}
+
+.button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
+.marketing-site-content-section {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+            
+  }
+  
+  .marketing-site-content-section .button.round {
+    border-radius: 5000px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+  
+  .marketing-site-content-section .marketing-site-content-section-img {
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+                -ms-grid-row-align: center;
+            align-self: center;
+    -webkit-flex: 1 0 100%;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
+  
+  .marketing-site-content-section .marketing-site-content-section-img img {
+    width: 100%;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .marketing-site-content-section .marketing-site-content-section-img {
+      -webkit-flex: 1 0 50%;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%;
+    }
+  }
+  
+  .marketing-site-content-section .marketing-site-content-section-block {
+    padding: 1rem;
+    -webkit-flex: 1 0 100%;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+            align-self: stretch;
+    background: #e6e6e6;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  
+  @media screen and (min-width: 40em) {
+    .marketing-site-content-section .marketing-site-content-section-block {
+      -webkit-flex: 1 0 50%;
+          -ms-flex: 1 0 50%;
+              flex: 1 0 50%;
+      padding: 2rem;
+    }
+  }
+  
+  .marketing-site-content-section-block-header {
+    font-size: 24px;
+  }
+  
+  .marketing-site-content-section-block-subheader {
+    font-size: 13px;
+  }
+  
+
+
+  .testimonial-block-vertical {
+    padding-bottom: 25px;
+  }
+
+  .testimonial-block-vertical-quote {
+    background: rgba(23, 121, 186, 0.25);
+    padding: 1rem;
+    border-radius: 0;
+    margin-bottom: 1.875rem;
+    position: relative;
+  }
+  
+  .testimonial-block-vertical-quote p {
+    margin-bottom: 30px;
+  }
+  
+  .testimonial-block-vertical-quote::after {
+    content: '';
+    bottom: -1.25rem;
+    left: 2.25rem;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 1.25rem 1.125rem 0 1.125rem;
+    border-color: rgba(23, 121, 186, 0.25) transparent transparent transparent;
+    position: absolute;
+  }
+  
+  .testimonial-block-vertical-person {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 1.65rem;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .testimonial-block-vertical-avatar {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .testimonial-block-vertical-name {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-left: 0.65rem;
+  }
+  
+  .testimonial-block-vertical-info {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #8a8a8a;
+    margin-bottom: 0;
+    margin-left: 0.65rem;
+  }
+  
+  
+.social-footer {
+  padding: 1rem;
+  color: white;
+  background: #2c3840;
+  border-top: solid 5px #0a0a0a;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+
+.bottom-bar .ul {
+background-color: #2c3840;
+}
+
+.bottom-bar .bottom-bar-left .menu-text {
+  background-color: #2c3840;
+  color: white;
+}
+
+.bottom-bar .bottom-bar-right .menu {
+  background-color: #2c3840;
+  color: white;
+}
+
+
+
+
+  
+  
