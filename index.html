@@ -11,36 +11,182 @@
 </head>
 
 <body>
+    <!-- Test user input-->
 
+    <!-- <input type="text" class="form-control searchInput" placeholder="Enter Website" aria-label="Website"
+        aria-describedby="button-addon2">
+    <div class="input-group-append">
+        <button class="btn btn-outline-secondary bg-primary searchButton" type="button" id="button-addon2">Search
+            Website</button> -->
+    <h1>Front End Resources</h1>
+    <ul>
+        <li class="website1">W3Schools</li>
+        <li class="website2">Mozilla Developer Network</li>
+        <li class="website3">Bootstrap</li>
+        <li class="website4">Adobe</li>
+    </ul>
 
     <script>
+
+        // Scraper API pulls blogs 
+
         // Web page summarizer
         // https://rapidapi.com/Top-Rated/api/webpage-summarizer/endpoints
 
         // Start Ajax call
 
-        // Key 11ec7730d8mshf0f1ca431afe37ep1b5b52jsn073911782e1c
+        // Key Jamie  = 11ec7730d8mshf0f1ca431afe37ep1b5b52jsn073911782e1c
+
+        // Key Adam: 125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3
 
         // Request URL: https://webpage-summarizer.p.rapidapi.com/
 
+        // Front End 
+        // var w3Schools = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.w3schools.com%2F";
+        // var MozillaDeveloperNetwork = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2F";
+        // var Bootstrap = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F";
+        // var adobe = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.adobe.com%2F";
 
-        // URL https://edition.cnn.com/2019/08/08/politics/trump-director-of-national-intelligence-search/index.html
+        // Back End
+        // var gitHub = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgithub.com%2F";
+        // var stackOverflow = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fstackoverflow.com%2F";
+        // var JQuery = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fjquery.com%2F";
+        // var Momentjs = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fmomentjs.com%2F";
 
-        var settings = {
+        // var searchButton = $(".searchButton");
+        // var searchInput = $(".searchInput").val();
+        // $("body").text(response.title);
+
+        // var website = [
+        //     {
+        //         url: w3Schools,
+        //         summary: response.summary,
+
+        //     }
+        // ]
+        // console.log(website);
+
+        // Not yet working
+        // var webImage = $("body").append("<img>");
+        // // Not yet working
+        // $(webImage).text(response.image);
+        // Class on button 
+        // Click event
+        // Get that buttons data attribute 
+        // Put URL in dynamically 
+        // Array of objects - URL key, summary of object and our summary + URL Link
+
+        // W3Schools 
+        var settings1 = {
             "async": true,
             "crossDomain": true,
-            // Need to figure out parameters needed to change the ?url into a variable
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fedition.cnn.com%2F2019%2F08%2F08%2Fpolitics%2Ftrump-director-of-national-intelligence-search%2Findex.html",
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.w3schools.com%2F",
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
-                "x-rapidapi-key": "11ec7730d8mshf0f1ca431afe37ep1b5b52jsn073911782e1c"
+                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
             }
         }
+        // Start Click 
+        $(".website1").on("click", function (properties) {
+            // Test object 
 
-        $.ajax(settings).done(function (response) {
-            console.log(response);
+            $.ajax(settings1).done(function (response) {
+                console.log(response);
+
+                $("body").text(response.title);
+                // Not working 
+                $("body").text(response.image);
+                $("body").text(response.summary);
+            });
+            // end click
         });
+        // MozillaDeveloperNetwork
+        var settings2 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2F",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
+                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
+            }
+        }
+        // Start Click 
+        $(".website2").on("click", function (properties) {
+            // Test object 
+
+            $.ajax(settings2).done(function (response) {
+                console.log(response);
+
+                $("body").text(response.title);
+                // Not working 
+                $("body").text(response.image);
+                $("body").text(response.summary);
+            });
+            // end click
+        });
+        // MozillaDeveloperNetwork
+        var settings3 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
+                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
+            }
+        }
+        // Start Click 
+        $(".website3").on("click", function (properties) {
+            // Test object 
+
+            $.ajax(settings3).done(function (response) {
+                console.log(response);
+
+                $("body").text(response.title);
+                // Not working 
+                $("body").text(response.image);
+                $("body").text(response.summary);
+            });
+            // end click
+        });
+        // MozillaDeveloperNetwork
+        var settings4 = {
+            "async": true,
+            "crossDomain": true,
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.adobe.com%2F",
+            "method": "GET",
+            "headers": {
+                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
+                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
+            }
+        }
+        // Start Click 
+        $(".website4").on("click", function (properties) {
+            // Test object 
+
+            $.ajax(settings4).done(function (response) {
+                console.log(response);
+
+                var website4 = $(".website4");
+                website4.append("<div>" + response.title + "</div>");
+                website4.append("body");
+                // $("body").text(response.title);
+                // Not working 
+                $("body").text(response.image);
+                $("body").text(response.summary);
+            });
+            // end click
+        });
+
+        // fiveDayThree
+        // var fiveDayCard = $(".fiveDayCard").append("<div>").addClass("card-body");
+        // var fiveDayThree = $(".fiveDayThree").append("<div>").addClass("card-text");
+        // // Add Date
+        // fiveDayCard.append.fiveDayThree;
+        // fiveDayThree.addClass("fiveDayColor");
+        // var fiveDayDateThree = fiveDayThree.append("<p>").addClass("card-text");
 
     </script>
 </body>
