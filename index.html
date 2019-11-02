@@ -144,10 +144,13 @@
             $.ajax(settings3).done(function (response) {
                 console.log(response);
 
-                $("body").text(response.title);
-                // Not working 
-                $("body").text(response.image);
-                $("body").text(response.summary);
+                $("body").append("<div>");
+                $("div").text(response.summary);
+
+                // $("body").text(response.title);
+                // // Not working 
+                // $("body").text(response.image);
+                // $("body").text(response.summary);
             });
             // end click
         });
@@ -155,7 +158,7 @@
         var settings4 = {
             "async": true,
             "crossDomain": true,
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.adobe.com%2F",
+            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F",
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
@@ -169,25 +172,16 @@
             $.ajax(settings4).done(function (response) {
                 console.log(response);
 
-                var website4 = $(".website4");
-                website4.append("<div>" + response.title + "</div>");
-                website4.append("body");
-                // $("body").text(response.title);
+
+
+                $("body").append("<div>");
+                $("div").text(response.summary);
                 // Not working 
-                $("body").text(response.image);
-                $("body").text(response.summary);
+                // $("body").text(response.image);
+                // $("body").text(response.summary);
             });
             // end click
         });
-
-        // fiveDayThree
-        // var fiveDayCard = $(".fiveDayCard").append("<div>").addClass("card-body");
-        // var fiveDayThree = $(".fiveDayThree").append("<div>").addClass("card-text");
-        // // Add Date
-        // fiveDayCard.append.fiveDayThree;
-        // fiveDayThree.addClass("fiveDayColor");
-        // var fiveDayDateThree = fiveDayThree.append("<p>").addClass("card-text");
-
     </script>
 </body>
 
