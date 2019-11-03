@@ -17,3 +17,15 @@ h1 {
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+
+p.lead {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    color: #0f6630;
+}
