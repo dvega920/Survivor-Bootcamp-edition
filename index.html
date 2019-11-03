@@ -8,6 +8,21 @@
     <title>Document</title>
     <script src="http://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <style>
+        .testFront {
+            border: 1px solid red;
+            width: 30%;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+
+        .testBack {
+            border: 1px solid blue;
+            width: 30%;
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,6 +41,22 @@
         <li class="website4">Adobe</li>
     </ul>
 
+    <div class="testFront">
+
+    </div>
+
+    <h1>Back End Resources</h1>
+    <ul>
+        <li class="website1">Git Hub</li>
+        <li class="website2">Stack Overflow</li>
+        <li class="website3">JQuery</li>
+        <li class="website4">Moment JS</li>
+    </ul>
+
+    <div class="testBack">
+
+    </div>
+
     <script>
 
         // Scraper API pulls blogs 
@@ -42,147 +73,249 @@
         // Request URL: https://webpage-summarizer.p.rapidapi.com/
 
         // Front End 
-        // var w3Schools = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.w3schools.com%2F";
-        // var MozillaDeveloperNetwork = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2F";
-        // var Bootstrap = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F";
-        // var adobe = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.adobe.com%2F";
+        // var w3Schools = "https://www.w3schools.com";
+        // var MozillaDeveloperNetwork = "https://developer.mozilla.org/en-US/";
+        // var Bootstrap = "https://getbootstrap.com/";
+        // var adobe = "https://www.adobe.com/";
 
         // Back End
-        // var gitHub = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgithub.com%2F";
-        // var stackOverflow = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fstackoverflow.com%2F";
-        // var JQuery = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fjquery.com%2F";
-        // var Momentjs = "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fmomentjs.com%2F";
+        // var gitHub = "https://github.com/";
+        // var stackOverflow = "https://stackoverflow.com/";
+        // var JQuery = "https://jquery.com/";
+        // var Momentjs = "https://momentjs.com/";
 
-        // var searchButton = $(".searchButton");
-        // var searchInput = $(".searchInput").val();
-        // $("body").text(response.title);
+        // Key: 5dbf122089ddb1d926963e42677ead3e34c4cb2860623
 
-        // var website = [
-        //     {
-        //         url: w3Schools,
-        //         summary: response.summary,
+        var apiKey = "5dbf122089ddb1d926963e42677ead3e34c4cb2860623";
 
-        //     }
-        // ]
-        // console.log(website);
-
-        // Not yet working
-        // var webImage = $("body").append("<img>");
-        // // Not yet working
-        // $(webImage).text(response.image);
-        // Class on button 
-        // Click event
-        // Get that buttons data attribute 
-        // Put URL in dynamically 
-        // Array of objects - URL key, summary of object and our summary + URL Link
-
-        // W3Schools 
-        var settings1 = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fwww.w3schools.com%2F",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
-                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
-            }
-        }
-        // Start Click 
+        // Start Click for w3Schools
         $(".website1").on("click", function (properties) {
             // Test object 
 
-            $.ajax(settings1).done(function (response) {
-                console.log(response);
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.w3schools.com",
+                success: function (result) {
+                    console.log(result);
 
-                $("body").text(response.title);
-                // Not working 
-                $("body").text(response.image);
-                $("body").text(response.summary);
+                    var p = $("<p>");
+                    var test = $(".testFront");
+                    // test.empty();
+                    test.append(p);
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
             });
-            // end click
         });
-        // MozillaDeveloperNetwork
-        var settings2 = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fdeveloper.mozilla.org%2Fen-US%2F",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
-                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
-            }
-        }
-        // Start Click 
+        // end click
+
+        // Start Click for Mozilla Developer Network
         $(".website2").on("click", function (properties) {
             // Test object 
 
-            $.ajax(settings2).done(function (response) {
-                console.log(response);
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://developer.mozilla.org/en-US/",
+                success: function (result) {
+                    console.log(result);
 
-                $("body").text(response.title);
-                // Not working 
-                $("body").text(response.image);
-                $("body").text(response.summary);
+                    var p = $("<p>");
+                    var test = $(".testFront")
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Mozilla Developer Network offers comprehensive documentation on webdevelopment languages, including HTML, CSS and Javascript");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
             });
-            // end click
         });
-        // MozillaDeveloperNetwork
-        var settings3 = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
-                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
-            }
-        }
-        // Start Click 
+        // end click
+
+        // Start Click for Bootstrap
         $(".website3").on("click", function (properties) {
             // Test object 
 
-            $.ajax(settings3).done(function (response) {
-                console.log(response);
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://getbootstrap.com/",
+                success: function (result) {
+                    console.log(result);
 
-                $("body").append("<div>");
-                $("div").text(response.summary);
+                    var p = $("<p>");
+                    var test = $(".testFront");
+                    // test.empty();
+                    test.append(p);
 
-                // $("body").text(response.title);
-                // // Not working 
-                // $("body").text(response.image);
-                // $("body").text(response.summary);
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Bootstrap offers comprehensive CSS layouts for HTML documents. This is easy to implement using their CDN and documentation.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
             });
-            // end click
         });
-        // MozillaDeveloperNetwork
-        var settings4 = {
-            "async": true,
-            "crossDomain": true,
-            "url": "https://webpage-summarizer.p.rapidapi.com/?url=https%3A%2F%2Fgetbootstrap.com%2F",
-            "method": "GET",
-            "headers": {
-                "x-rapidapi-host": "webpage-summarizer.p.rapidapi.com",
-                "x-rapidapi-key": "125562d65dmshd01612928282be5p17bd7cjsn82096cd900a3"
-            }
-        }
-        // Start Click 
+        // end click
+
+        // Start Click for Adobe
         $(".website4").on("click", function (properties) {
             // Test object 
 
-            $.ajax(settings4).done(function (response) {
-                console.log(response);
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.adobe.com/",
+                success: function (result) {
+                    console.log(result);
 
+                    var p = $("<p>");
+                    var test = $(".testFront");
+                    // test.empty();
+                    test.append(p);
 
-
-                $("body").append("<div>");
-                $("div").text(response.summary);
-                // Not working 
-                // $("body").text(response.image);
-                // $("body").text(response.summary);
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Bootstrap offers comprehensive CSS layouts for HTML documents. This is easy to implement using their CDN and documentation.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
             });
-            // end click
         });
+        // end click
+
+        // Start Backend Resources 
+
+        // Start Click for Adobe
+        $(".website1").on("click", function (properties) {
+            // Test object 
+
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.adobe.com/",
+                success: function (result) {
+                    console.log(result);
+
+                    var p = $("<p>");
+                    var test = $(".testBack");
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Adobe offers beautiful stock photos and photo editing capabilities.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
+            });
+        });
+        // end click
+
+        // Start Click for Git Hub
+        $(".website2").on("click", function (properties) {
+            // Test object 
+
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://github.com/",
+                success: function (result) {
+                    console.log(result);
+
+                    var p = $("<p>");
+                    var test = $(".testBack");
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "GitHub is a fantastic website for version control of your project. They also offer an IO link for live prokect demonstration.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
+            });
+        });
+        // end click
+
+        // Start Click for Stack Overflow
+        $(".website3").on("click", function (properties) {
+            // Test object 
+
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://stackoverflow.com/",
+                success: function (result) {
+                    console.log(result);
+
+                    var p = $("<p>");
+                    var test = $(".testBack");
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Code not working? Take your question to Stack Overflow, a helpful forum where other developers can review your code.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
+            });
+        });
+        // end click
+
+        // Start Click for JQuery
+        $(".website4").on("click", function (properties) {
+            // Test object 
+
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://jquery.com/",
+                success: function (result) {
+                    console.log(result);
+
+                    var p = $("<p>");
+                    var test = $(".testBack");
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "JQuery is a Javascript library that implements the same functionality with abbreviated, easily readable code.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
+            });
+        });
+        // end click
+
+
+        // Start Click for Moment JS
+        $(".website5").on("click", function (properties) {
+            // Test object 
+
+            $.ajax({
+                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://momentjs.com/",
+                success: function (result) {
+                    console.log(result);
+
+                    var p = $("<p>");
+                    var test = $(".testBack");
+                    // test.empty();
+                    test.append(p);
+
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Moment JS is especially helpful in provided multiple formats for time and date.");
+                    p.append("<img src='result.image'>" + result.image + "</img>");
+                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                }
+            });
+        });
+        // end click
+
+
+        // $.ajax({
+        //     url: "https://api.linkpreview.net?key=5dbf122089ddb1d926963e42677ead3e34c4cb2860623&q=https://www.w3schools.com",
+        //     success: function (result) {
+        //         console.log(result);
+        //     }
+        // });
+        // https://www.w3schools.com
     </script>
+
 </body>
 
 </html>
