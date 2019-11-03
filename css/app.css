@@ -29,3 +29,18 @@ li {
     margin: 5px;
     color: #0f6630;
 }
+
+h3.middle.section {
+    color: #0f6630;
+    text-decoration-line: underline;
+
+}
+
+p.jokes {
+    color: #0f6630;
+}
+
+h2,
+p {
+    color: #333333;
+}
