@@ -44,3 +44,9 @@ p.jokes {
     color: #0f6630;
 }
 
+p, .blogs, h2 {
+    color: black;
+}
+
+
+
