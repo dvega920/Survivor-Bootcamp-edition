@@ -35,10 +35,10 @@
             Website</button> -->
     <h1>Front End Resources</h1>
     <ul>
-        <li class="website1">W3Schools</li>
-        <li class="website2">Mozilla Developer Network</li>
-        <li class="website3">Bootstrap</li>
-        <li class="website4">Adobe</li>
+        <li class="websiteF1">W3Schools</li>
+        <li class="websiteF2">Mozilla Developer Network</li>
+        <li class="websiteF3">Bootstrap</li>
+        <li class="websiteF4">Adobe</li>
     </ul>
 
     <div class="testFront">
@@ -47,10 +47,10 @@
 
     <h1>Back End Resources</h1>
     <ul>
-        <li class="website1">Git Hub</li>
-        <li class="website2">Stack Overflow</li>
-        <li class="website3">JQuery</li>
-        <li class="website4">Moment JS</li>
+        <li class="websiteB1">Git Hub</li>
+        <li class="websiteB2">Stack Overflow</li>
+        <li class="websiteB3">JQuery</li>
+        <li class="websiteB4">Moment JS</li>
     </ul>
 
     <div class="testBack">
@@ -86,10 +86,11 @@
 
         // Key: 5dbf122089ddb1d926963e42677ead3e34c4cb2860623
 
+
         var apiKey = "5dbf122089ddb1d926963e42677ead3e34c4cb2860623";
 
         // Start Click for w3Schools
-        $(".website1").on("click", function (properties) {
+        $(".websiteF1").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -99,20 +100,22 @@
 
                     var p = $("<p>");
                     var test = $(".testFront");
-                    // test.empty();
+                    test.empty();
                     test.append(p);
                     p.append("Title: " + result.title);
                     p.append("<p>" + "Description: " + result.description + "</p>");
                     p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
         // end click
 
         // Start Click for Mozilla Developer Network
-        $(".website2").on("click", function (properties) {
+        $(".websiteF2").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -121,22 +124,23 @@
                     console.log(result);
 
                     var p = $("<p>");
-                    var test = $(".testFront")
-                    // test.empty();
+                    var test = $(".testFront");
+                    test.empty();
                     test.append(p);
-
                     p.append("Title: " + result.title);
                     p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Mozilla Developer Network offers comprehensive documentation on webdevelopment languages, including HTML, CSS and Javascript");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
         // end click
 
         // Start Click for Bootstrap
-        $(".website3").on("click", function (properties) {
+        $(".websiteF3").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -146,21 +150,22 @@
 
                     var p = $("<p>");
                     var test = $(".testFront");
-                    // test.empty();
+                    test.empty();
                     test.append(p);
-
                     p.append("Title: " + result.title);
                     p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Bootstrap offers comprehensive CSS layouts for HTML documents. This is easy to implement using their CDN and documentation.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
         // end click
 
         // Start Click for Adobe
-        $(".website4").on("click", function (properties) {
+        $(".websiteF4").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -170,14 +175,15 @@
 
                     var p = $("<p>");
                     var test = $(".testFront");
-                    // test.empty();
+                    test.empty();
                     test.append(p);
-
                     p.append("Title: " + result.title);
                     p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Bootstrap offers comprehensive CSS layouts for HTML documents. This is easy to implement using their CDN and documentation.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
@@ -185,32 +191,8 @@
 
         // Start Backend Resources 
 
-        // Start Click for Adobe
-        $(".website1").on("click", function (properties) {
-            // Test object 
-
-            $.ajax({
-                url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.adobe.com/",
-                success: function (result) {
-                    console.log(result);
-
-                    var p = $("<p>");
-                    var test = $(".testBack");
-                    // test.empty();
-                    test.append(p);
-
-                    p.append("Title: " + result.title);
-                    p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Adobe offers beautiful stock photos and photo editing capabilities.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
-                }
-            });
-        });
-        // end click
-
         // Start Click for Git Hub
-        $(".website2").on("click", function (properties) {
+        $(".websiteB1").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -219,22 +201,23 @@
                     console.log(result);
 
                     var p = $("<p>");
-                    var test = $(".testBack");
-                    // test.empty();
+                    var test = $(".testFront");
+                    test.empty();
                     test.append(p);
-
-                    p.append("Title: " + result.title);
-                    p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "GitHub is a fantastic website for version control of your project. They also offer an IO link for live prokect demonstration.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
         // end click
 
         // Start Click for Stack Overflow
-        $(".website3").on("click", function (properties) {
+        $(".websiteB2").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -243,22 +226,23 @@
                     console.log(result);
 
                     var p = $("<p>");
-                    var test = $(".testBack");
-                    // test.empty();
+                    var test = $(".testFront");
+                    test.empty();
                     test.append(p);
-
-                    p.append("Title: " + result.title);
-                    p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Code not working? Take your question to Stack Overflow, a helpful forum where other developers can review your code.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
         // end click
 
         // Start Click for JQuery
-        $(".website4").on("click", function (properties) {
+        $(".websiteB3").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -267,15 +251,16 @@
                     console.log(result);
 
                     var p = $("<p>");
-                    var test = $(".testBack");
-                    // test.empty();
+                    var test = $(".testFront");
+                    test.empty();
                     test.append(p);
-
-                    p.append("Title: " + result.title);
-                    p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "JQuery is a Javascript library that implements the same functionality with abbreviated, easily readable code.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
@@ -283,7 +268,7 @@
 
 
         // Start Click for Moment JS
-        $(".website5").on("click", function (properties) {
+        $(".websiteB4").on("click", function (properties) {
             // Test object 
 
             $.ajax({
@@ -292,15 +277,16 @@
                     console.log(result);
 
                     var p = $("<p>");
-                    var test = $(".testBack");
-                    // test.empty();
+                    var test = $(".testFront");
+                    test.empty();
                     test.append(p);
-
-                    p.append("Title: " + result.title);
-                    p.append("<p>" + "Description: " + result.description + "</p>");
-                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "Moment JS is especially helpful in provided multiple formats for time and date.");
-                    p.append("<img src='result.image'>" + result.image + "</img>");
-                    p.append("<p>" + "<a href='response.url'>" + result.url + "</a>" + "</p>");
+                    p.append("Title: " + result.title);
+                    p.append("<p>" + "Description: " + result.description + "</p>");
+                    p.append("<p>" + "Why we recommend it: " + "</p>" + "<p>" + "W3Schools is a fantanstic resource for learning to code from the ground up. We particularly like the Try It Yourself feature that allows you to make live code edits.");
+                    var $imgTag = $("<img>").attr("src", result.image);
+                    p.append($imgTag);
+                    var $aTag = $("<a>").attr("href", result.url).text(result.url);
+                    p.append($aTag);
                 }
             });
         });
