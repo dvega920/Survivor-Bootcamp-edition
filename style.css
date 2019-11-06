@@ -242,6 +242,26 @@ background-color: #2c3840;
 
 
 
+.input-group-rounded .input-group-field {
+  border-radius: 5000px 0 0 5000px;
+  padding-left: 1rem;
+}
 
-  
-  
+.input-group-rounded .input-group-button .button {
+  border-radius: 0 5000px 5000px 0;
+  font-size: 0.8rem;
+}
+
+input.button.secondary {
+  background: blue;
+  line-height: normal;
+}
+
+img.survivor {
+  width: 50%;
+  height: 50%;
+}
+
+div.row.column.title {
+  text-align: center;
+}
