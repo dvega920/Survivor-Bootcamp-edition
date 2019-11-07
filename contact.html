@@ -19,7 +19,7 @@
         </div>
         <div class="top-bar-right" style="margin-right: 1rem; font-size: 75%;"">
             
-            <ul class="dropdown menu" data-dropdown-menu>
+            <ul class=" dropdown menu" data-dropdown-menu>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Resources</a>
                 <ul class="menu" data-dropdown-menu>
@@ -37,8 +37,12 @@
     <div class="row" id="heroRow" style="max-width: 100rem">
         <div class="hero-section medium-12 columns">
             <div class="hero-section-text">
-                <h1>Survivor: Bootcamp Edition</h1>
+                <h1>Survivor</h1>
+                <h3 class="main-subtitle">Bootcamp Edition</h3>
                 <h5> One stop shop for Coding Bootcamp support! </h5>
+                <div></div>
+                <h6>Can't find what you're looking for? Google Foo below!</h6>
+                <div class="gcse-searchbox-only"></div>
             </div>
         </div>
     </div>
@@ -46,7 +50,8 @@
 
     <!-- 1st Row (MAIN CONTENT) -->
 
-    <div class="row medium-12 columns" id="infoRow" style="max-width: 100rem; margin-top: 1rem; padding-left: 4rem; padding-right: 4rem;">
+    <div class="row medium-12 columns" id="infoRow"
+        style="max-width: 100rem; margin-top: 1rem; padding-left: 4rem; padding-right: 4rem;">
 
         <div class="infoContainer">
 
@@ -70,25 +75,25 @@
     <br>
     <!-- Line break w/ rule and some spacing and 100% Width -->
     <hr style="margin-top: 1rem; margin-bottom: 1rem; max-width: 100rem;">
-   
+
     <br>
-   
+
     <div class="contactRow" style="margin-bottom: 2rem;">
-    <section class="contact-us-section">
+        <section class="contact-us-section">
             <div class="row medium-unstack">
-              <div class="columns contact-us-section-right">
-                <form class="contact-us-form">
-                  <input type="text" placeholder="Full name">
-                  <input type="email" placeholder="Email">
-                  <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
-                  <div class="contact-us-form-actions text-center">
-                    <input type="submit" class="round button" value="Send it" />
-                  </div>
-                </form>
-              </div>
+                <div class="columns contact-us-section-right">
+                    <form class="contact-us-form">
+                        <input type="text" placeholder="Full name">
+                        <input type="email" placeholder="Email">
+                        <textarea name="message" id="" rows="12" placeholder="Type your message here"></textarea>
+                        <div class="contact-us-form-actions text-center">
+                            <input type="submit" class="round button" value="Send it" />
+                        </div>
+                    </form>
+                </div>
             </div>
-          </section>
-        </div>          
+        </section>
+    </div>
 
     <!-- Footer -->
 
@@ -115,10 +120,10 @@
     <!-- Script Links -->
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <link rel="stylesheet" href="style.css">
     <script>
         $(document).foundation();
     </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
