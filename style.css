@@ -1,5 +1,4 @@
 .top-bar {
-<<<<<<< HEAD
     background-color: #2c3840 !important;
     border-bottom: solid 5px #0a0a0a;
 }
@@ -10,23 +9,10 @@
 
 .top-bar .top-bar-left .menu-text {
     background-color: #2c3840 !important;
-=======
-    background-color: #2c3840;
-    border-bottom: solid 5px #0a0a0a;
-}
-
-.top-bar .ul {
-  background-color: #2c3840;
-}
-
-.top-bar .top-bar-left .menu-text {
-    background-color: #2c3840;
->>>>>>> master
     color: white;
 }
 
 .top-bar .top-bar-right .menu {
-<<<<<<< HEAD
     background-color: #2c3840 !important;
     color: white;
 }
@@ -34,12 +20,6 @@
 
 
 
-=======
-    background-color: #2c3840;
-    color: white;
-}
-
->>>>>>> master
 a { 
     color: white;
 }
@@ -48,7 +28,6 @@ p {
   font-size: small;
 }
 
-<<<<<<< HEAD
 li {
   font-size: small;
 }
@@ -57,8 +36,6 @@ ul {
   background-color: #2c3840;
 }
 
-=======
->>>>>>> master
 .hero-section {
     background-image: url(assets/studyimg.jpg);
     background-position: center;
@@ -78,7 +55,6 @@ ul {
     margin-bottom: 1rem;
 }
 
-<<<<<<< HEAD
 .blog-hero {
   background-image: url(assets/adi-goldstein-mDinBvq1Sfg-unsplash.jpg);
   background-position: center;
@@ -89,8 +65,6 @@ ul {
   border: #2c3840 solid 3px;
 }
 
-=======
->>>>>>> master
 .hero-section .hero-section-text {
     color: lightgoldenrodyellow;
     text-shadow: 6px 6px 12px #0a0a0a;
@@ -193,18 +167,10 @@ ul {
   .marketing-site-content-section-block-subheader {
     font-size: 13px;
   }
-<<<<<<< HEAD
 
   .testimonial-block-vertical {
     padding-bottom: 25px;
     margin-bottom: 1rem;
-=======
-  
-
-
-  .testimonial-block-vertical {
-    padding-bottom: 25px;
->>>>>>> master
   }
 
   .testimonial-block-vertical-quote {
@@ -262,16 +228,12 @@ ul {
     margin-left: 0.65rem;
   }
   
-<<<<<<< HEAD
 .footerRow {
   position: static; 
   bottom: 0; 
   z-index:100000
 }  
 
-=======
-  
->>>>>>> master
 .social-footer {
   padding: 1rem;
   color: white;
@@ -288,13 +250,10 @@ ul {
           justify-content: space-between;
 }
 
-<<<<<<< HEAD
 .contact-us-section {
   padding-left: 3rem;
   padding-right: 3rem;
   }  
-=======
->>>>>>> master
 
 .bottom-bar .ul {
 background-color: #2c3840;
@@ -309,32 +268,3 @@ background-color: #2c3840;
   background-color: #2c3840;
   color: white;
 }
-
-
-<<<<<<< HEAD
-=======
-
-.input-group-rounded .input-group-field {
-  border-radius: 5000px 0 0 5000px;
-  padding-left: 1rem;
-}
-
-.input-group-rounded .input-group-button .button {
-  border-radius: 0 5000px 5000px 0;
-  font-size: 0.8rem;
-}
-
-input.button.secondary {
-  background: blue;
-  line-height: normal;
-}
-
-img.survivor {
-  width: 50%;
-  height: 50%;
-}
-
-div.row.column.title {
-  text-align: center;
-}
->>>>>>> master
