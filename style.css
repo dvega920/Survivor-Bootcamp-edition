@@ -34,7 +34,7 @@ ul {
     background-image: url(assets/studyimg.jpg);
     background-position: center;
     background-size: cover;
-    height: 40vh;
+    height: 70vh;
     border-bottom: #0a0a0a solid 20px;
     text-align: center;
     display: -webkit-flex;
@@ -62,6 +62,22 @@ ul {
 .hero-section .hero-section-text {
     color: lightgoldenrodyellow;
     text-shadow: 6px 6px 12px #0a0a0a;
+}
+
+h1 {
+  font-family: "Survivant";
+  font-size: 150px;
+  color: white;
+  margin: 0;
+}
+
+h3.main-subtitle {
+  font-weight: bolder;
+  color: white;
+}
+
+h6 {
+  /* padding-top: px; */
 }
 
 .infoContainer {
