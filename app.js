@@ -1,16 +1,20 @@
-$(document).ready(function () {
+// Group Project-1 - Survivor: Bootcamp Edition
+// Members: David Vega, Mandolin Foster, Adam Toomey
 
+// Document ready for Jquery
+$(document).ready(function () {
+    // API Key for Link Preview 3rd party API
     var apiKey = "5dbf122089ddb1d926963e42677ead3e34c4cb2860623";
 
     // Start Click for JQuery
     $(".jQuery").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://jquery.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var h3 = $("<h3>");
                 var p = $("<p>");
                 var img = $("<img>");
@@ -34,13 +38,13 @@ $(document).ready(function () {
 
     // Start Click for Moment JS
     $(".momentJS").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://momentjs.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var h3 = $("<h3>");
                 var p = $("<p>");
                 var test = $(".testFront");
@@ -62,13 +66,13 @@ $(document).ready(function () {
 
     // Start Click for Bootstrap
     $(".bootStrap").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://getbootstrap.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var h3 = $("<h3>");
                 var p = $("<p>");
                 var test = $(".testFront");
@@ -90,13 +94,13 @@ $(document).ready(function () {
 
     // Start Click for Git Hub
     $(".gitHub").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://github.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var p = $("<p>");
                 var h3 = $("<h3>");
                 var test = $(".testFront");
@@ -118,13 +122,13 @@ $(document).ready(function () {
 
     // Start Click for Mozilla Developer Network
     $(".mdnWebDocs").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://developer.mozilla.org/en-US/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var p = $("<p>");
                 var h3 = $("<h3>");
                 var div = $("<div>");
@@ -148,13 +152,13 @@ $(document).ready(function () {
 
     // Start Click for Adobe
     $(".adobe").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.adobe.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var p = $("<p>");
                 var h3 = $("<h3>");
                 var div = $("<div>");
@@ -178,13 +182,13 @@ $(document).ready(function () {
 
     // Start Click for Stack Overflow
     $(".stackOverflow").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://stackoverflow.com/",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var p = $("<p>");
                 var h3 = $("<h3>");
                 var div = $("<div>");
@@ -209,13 +213,13 @@ $(document).ready(function () {
 
     // Start Click for w3Schools
     $(".w3Schools").on("click", function (properties) {
-        // Test object 
 
+        // Ajax call
         $.ajax({
             url: "https://api.linkpreview.net?key=" + apiKey + "&q=https://www.w3schools.com",
             success: function (result) {
                 console.log(result);
-
+                // Appends response data to HMTL page 
                 var p = $("<p>");
                 var h3 = $("<h3>");
                 var div = $("<div>");
