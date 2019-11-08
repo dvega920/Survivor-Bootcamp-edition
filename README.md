@@ -5,6 +5,7 @@
 ## David Vega
 ## Mandolin Foster
 ## Adam Toomey
+## Jamie Morris
 
 * ['Project-1 - Survivor: Bootcamp Edition'](https://github.com/dvega920/Survivor-Bootcamp-edition)
 * ['Project-1 - Survivor: Bootcamp Edition'](https://dvega920.github.io/Survivor-Bootcamp-edition/)
