@@ -7,9 +7,9 @@
 ## Adam Toomey
 ## Jamie Morris
 
-* ['Project-1 - Survivor: Bootcamp Edition'](https://github.com/dvega920/Survivor-Bootcamp-edition)
-* ['Project-1 - Survivor: Bootcamp Edition'](https://dvega920.github.io/Survivor-Bootcamp-edition/)
-* ['Project-1 - Survivor: Bootcamp Edition'](https://drive.google.com/file/d/1Vwszd5-rVd5LQKwpRoxpXqu_1eiH3uDI/view)
+* ['Project-1 - Survivor: Bootcamp Edition - Git Hub'](https://github.com/dvega920/Survivor-Bootcamp-edition)
+* ['Project-1 - Survivor: Bootcamp Edition - Git Hub IO'](https://dvega920.github.io/Survivor-Bootcamp-edition/)
+* ['Project-1 - Survivor: Bootcamp Edition - Demo Video'](https://drive.google.com/file/d/1PexQTvkab1gUu6sVF-98MZOOHGslAe1Y/view)
 
 
 
