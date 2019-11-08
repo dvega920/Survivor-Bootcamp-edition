@@ -1,35 +1,39 @@
+/* Group Project-1 - Survivor: Bootcamp Edition  */ 
+/* Members: David Vega, Mandolin Foster, Adam Toomey */
+
+/* This is the style for our Nav Bar */ 
 .top-bar {
     background-color: #2c3840 !important;
     border-bottom: solid 5px #0a0a0a;
 }
-
+/* This is the style for our Nav Bar UL */ 
 .top-bar ul {
   background-color: #2c3840 !important;
 }
-
+/* This is the style for our top Nav Bar left */ 
 .top-bar .top-bar-left .menu-text {
     background-color: #2c3840 !important;
     color: white;
 }
-
+/* This is the style for our top Nav Bar right */ 
 .top-bar .top-bar-right .menu {
     background-color: #2c3840 !important;
     color: white;
 }
 
-
+/* This is the style for paragraphs */ 
 p {
   font-size: small;
 }
-
+/* This is the style for list items */ 
 li {
   font-size: small;
 }
-
+/* This is the style for UL  */ 
 ul {
   background-color: #2c3840;
 }
-
+/* This is the style for our Hero-section */ 
 .hero-section {
     background-image: url(assets/studyimg.jpg);
     background-position: center;
@@ -48,7 +52,7 @@ ul {
     justify-content: center;
     margin-bottom: 1rem;
 }
-
+/* This is the style for our blog hero section */ 
 .blog-hero {
   background-image: url(assets/adi-goldstein-mDinBvq1Sfg-unsplash.jpg);
   background-position: center;
@@ -58,28 +62,28 @@ ul {
   margin-bottom: 1rem;
   border: #2c3840 solid 3px;
 }
-
+/* This is the style for hero section text content*/ 
 .hero-section .hero-section-text {
     color: lightgoldenrodyellow;
     text-shadow: 6px 6px 12px #0a0a0a;
 }
-
+/* This is the style for heading 1*/ 
 h1 {
   font-family: "Survivant";
   font-size: 150px;
   color: white;
   margin: 0;
 }
-
+/* This is the style for heading 3*/ 
 h3.main-subtitle {
   font-weight: bolder;
   color: white;
 }
-
+/* This is the style for heading  6*/ 
 h6 {
   /* padding-top: px; */
 }
-
+/* */ 
 .infoContainer {
     border: solid 2px #2c3840;
     align-content: center;
@@ -89,7 +93,7 @@ h6 {
     padding-bottom: 25px;
   
 }
-
+/* This is the style for round buttons */ 
 .button.round {
   border-radius: 5000px;
   text-transform: uppercase;
@@ -97,7 +101,7 @@ h6 {
   margin-top: 16px;
   margin-right: 0rem;
 }
-
+/* This is the style for section*/ 
 .marketing-site-content-section {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -108,14 +112,14 @@ h6 {
             margin-bottom: 25px;
             
   }
-  
+  /* This is the style for section */ 
   .marketing-site-content-section .button.round {
     border-radius: 5000px;
     text-transform: uppercase;
     margin-top: 5px;
     margin-bottom: 0;
   }
-  
+  /* This is the style for section */ 
   .marketing-site-content-section .marketing-site-content-section-img {
     -webkit-align-self: center;
         -ms-flex-item-align: center;
@@ -125,11 +129,11 @@ h6 {
         -ms-flex: 1 0 100%;
             flex: 1 0 100%;
   }
-  
+  /* This is the style for section */ 
   .marketing-site-content-section .marketing-site-content-section-img img {
     width: 100%;
   }
-  
+  /* This is the style for media query */ 
   @media screen and (min-width: 40em) {
     .marketing-site-content-section .marketing-site-content-section-img {
       -webkit-flex: 1 0 50%;
@@ -137,7 +141,7 @@ h6 {
               flex: 1 0 50%;
     }
   }
-  
+  /* This is the style for section */ 
   .marketing-site-content-section .marketing-site-content-section-block {
     padding: 1rem;
     -webkit-flex: 1 0 100%;
@@ -160,7 +164,7 @@ h6 {
         -ms-flex-align: start;
             align-items: flex-start;
   }
-  
+  /* This is the style for media query */ 
   @media screen and (min-width: 40em) {
     .marketing-site-content-section .marketing-site-content-section-block {
       -webkit-flex: 1 0 50%;
@@ -169,20 +173,20 @@ h6 {
       padding: 2rem;
     }
   }
-  
+  /* This is the style for content */ 
   .marketing-site-content-section-block-header {
     font-size: 24px;
   }
-  
+  /* This is the style for content */ 
   .marketing-site-content-section-block-subheader {
     font-size: 13px;
   }
-
+/* This is the style for testimonial */ 
   .testimonial-block-vertical {
     padding-bottom: 25px;
     margin-bottom: 1rem;
   }
-
+/* This is the style for testimonial */ 
   .testimonial-block-vertical-quote {
     background: rgba(23, 121, 186, 0.25);
     padding: 1rem;
@@ -190,11 +194,11 @@ h6 {
     margin-bottom: 1.875rem;
     position: relative;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-quote p {
-    margin-bottom: px;
+    margin-bottom: 0px;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-quote::after {
     content: '';
     bottom: -1.25rem;
@@ -206,7 +210,7 @@ h6 {
     border-color: rgba(23, 121, 186, 0.25) transparent transparent transparent;
     position: absolute;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-person {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -216,20 +220,20 @@ h6 {
         -ms-flex-align: center;
             align-items: center;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-avatar {
     border-radius: 50%;
     width: 60px;
     height: 60px;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-name {
     text-transform: uppercase;
     font-weight: 600;
     margin-bottom: 0;
     margin-left: 0.65rem;
   }
-  
+  /* This is the style for testimonial */ 
   .testimonial-block-vertical-info {
     text-transform: uppercase;
     font-size: 14px;
@@ -237,13 +241,13 @@ h6 {
     margin-bottom: 0;
     margin-left: 0.65rem;
   }
-  
+  /* This is the style for footer area  */ 
 .footerRow {
   position: static; 
   bottom: 0; 
   z-index:100000
 }  
-
+/* This is the style for footer info*/ 
 .social-footer {
   padding: 1rem;
   color: white;
@@ -259,21 +263,21 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
+/* This is the style for contact section */ 
 .contact-us-section {
   padding-left: 3rem;
   padding-right: 3rem;
   }  
-
+/* This is the style for bottom nav ul */ 
 .bottom-bar .ul {
 background-color: #2c3840;
 }
-
+/* This is the style for bottom nav */ 
 .bottom-bar .bottom-bar-left .menu-text {
   background-color: #2c3840;
   color: white;
 }
-
+/* This is the style for bottom nav right */
 .bottom-bar .bottom-bar-right .menu {
   background-color: #2c3840;
   color: white;
