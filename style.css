@@ -278,3 +278,22 @@ background-color: #2c3840;
   background-color: #2c3840;
   color: white;
 }
+
+.youtubeVideos {
+  margin: 10px;
+  padding: 5px;
+}
+
+h3.blog.header {
+  font-size: 25px;
+  word-wrap: break-word;
+}
+
+h3.blog.header::first-letter {
+  font-size: 80px;
+  font-family: serif;
+}
+
+#blogTips {
+  background-color: white;
+}
