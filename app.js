@@ -1,5 +1,5 @@
 // Group Project-1 - Survivor: Bootcamp Edition
-// Members: David Vega, Mandolin Foster, Adam Toomey
+// Members: David Vega, Mandolin Foster, Adam Toomey, Jamie Morris
 
 // Document ready for Jquery
 $(document).ready(function () {
