@@ -50,11 +50,11 @@
 
 ### This project features responsive design
 ### Has responsive layout for: 
-** Small devices (landscape phones, 576px and up)
-** Medium devices (tablets, 768px and up)
-** Large devices (desktops, 992px and up)
-** Extra large devices (large desktops, 1200px and up)
-** Foundation Media Query for 40em
+* Small devices (landscape phones, 576px and up)
+* Medium devices (tablets, 768px and up)
+* Large devices (desktops, 992px and up)
+* Extra large devices (large desktops, 1200px and up)
+* Foundation Media Query for 40em
 
 ### To Execute File:
 > Open in browser
@@ -74,13 +74,13 @@
 
 ### Code Validation 
     * These use W3C Code Validators for HTML and CSS
-        * Format: ![Validator-HTML](assets/images/Validator-HTML-Index)
-        * Format: ![Validator-HTML](assets/images/Validator-resource_1)
-        * Format: ![Validator-HTML](assets/images/Validator-resource_2)
-        * Format: ![Validator-HTML](assets/images/Validator-Blog)
-        * Format: ![Validator-HTML](assets/images/Validator-contact)
-        * Format: ![Validator-CSS](assets/images/Validator-CSS)
-        * Format: ![Validator-CSS](assets/images/Validator-JS)
+        * Format: ![Validator-HTML](assets/Validator-HTML-Index)
+        * Format: ![Validator-HTML](assets/Validator-resource_1)
+        * Format: ![Validator-HTML](assets/Validator-resource_2)
+        * Format: ![Validator-HTML](assets/Validator-Blog)
+        * Format: ![Validator-HTML](assets/Validator-contact)
+        * Format: ![Validator-CSS](assets/Validator-CSS)
+        * Format: ![Validator-CSS](assets/Validator-JS)
 
 
 
