@@ -52,7 +52,7 @@ $(document).ready(function () {
                 test.append(h3);
                 h3.append(result.title);
                 test.append(p.text(result.description));
-                test.append(`<p> Why we recommend it: </p> <p> Moment JS is especially helpful in provided multiple formats for time and date. </p>`);
+                test.append(`<p> Why we recommend it: </p> <p> Moment JS is especially helpful in providing multiple formats for time and date. </p>`);
                 var $aTag = $("<a>").attr("href", result.url).text(result.url);
                 test.append($aTag);
                 $("a").attr("target", "_blank");
@@ -137,7 +137,7 @@ $(document).ready(function () {
                 test.append(h3);
                 h3.append(result.title);
                 test.append(p.text(result.description));
-                test.append(`<p> Why we recommend it: </p> <p> Mozilla Developer Network offers comprehensive documentation on webdevelopment languages, including HTML, CSS and Javascript.</p>`);
+                test.append(`<p> Why we recommend it: </p> <p> Mozilla Developer Network offers comprehensive documentation on web development languages, including HTML, CSS and Javascript.</p>`);
                 var $aTag = $("<a>").attr("href", result.url).text(result.url);
                 test.append($aTag);
                 $("a").attr("target", "_blank");
